@@ -1,0 +1,249 @@
+*{
+margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body, html {
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('AGRONEGÓCIO.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  padding: 40px;
+  text-align: center;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.overlay h1 {
+  font-size: 125px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: 'Montserrat';
+}
+
+.overlay p {
+  font-size: 70px;
+   font-family: 'Montserrat';
+}
+
+/* Aplicações Section */
+.aplicacoes {
+  background-image: url('Drone.png');
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px;
+  height: 100vh;
+  color: #fff;
+}
+
+.conteudo {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.conteudo h2 {
+  font-size: 2.5em;
+  margin-top: 300px;
+  color: #ffde59;
+  font-weight: bold;
+  text-align: left; 
+  margin-left: -300px; 
+  margin-right: 0; 
+  margin-top: 100px;
+}
+
+.cartoes {
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+  gap: 30px;
+}
+
+.cartao {
+  background: white;
+  color: #000;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  font-size: 20px;
+}
+
+.cartao h3 {
+  color: #275102;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .cartoes {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .cartao {
+    width: 35%;
+  }
+}
+
+.beneficios {
+  padding: 80px 20px;
+  background-color: #ffffff;
+  height: 100vh;
+}
+
+.conteudo-beneficios {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.conteudo-beneficios h2 {
+  font-size: 100px;
+  color: #004d1a;
+  margin-bottom: 40px;
+}
+
+.beneficios-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.beneficio {
+  background-color: #f5f5f5;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  border: 2px solid transparent;
+}
+
+.beneficio.destaque {
+  border-color: #004d1a;
+}
+
+.beneficio strong {
+  display: block;
+  font-size: 1.1em;
+  color: #003c10;
+  margin-bottom: 5px;
+}
+
+.beneficio p {
+  color: #333;
+  font-size: 30px;
+}
+
+.beneficio.imagem {
+  background: none;
+  box-shadow: none;
+  border: none;
+  padding: 0;
+}
+
+.beneficio.imagem img {
+  width: 300px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .beneficio, .beneficio.imagem img {
+    width: 90%;
+  }
+}
+
+.desafios-section {
+  background-color: #c5dfb1;
+  padding: 60px 40px;
+  font-family: 'Montserrat', sans-serif;
+  color: #0d2d0c;
+  height: 100vh;
+}
+
+.desafios-titulo {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 60px;
+}
+
+.desafios-bloco {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 40px auto;
+  gap: 30px;
+  font-size: 50px;
+}
+
+.desafios-bloco.reverse {
+  flex-direction: row-reverse;
+}
+
+.desafios-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.desafios-texto {
+  flex: 1;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.footer-agro {
+  background-color: #9fbc88; 
+  padding: 40px 20px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #0d2d0c;
+  margin-top: 50px;
+}
+
+.footer-conteudo {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.footer-texto {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.footer-redes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-redes img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.footer-redes img:hover {
+  transform: scale(1.2);
+}
+
+
